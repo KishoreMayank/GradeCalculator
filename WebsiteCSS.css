@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+html, body{
+height: 85%;
+background-color: #00FF7F;
+font-family: 'Open Sans', sans-serif;
+background: url(image2.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.border{
+    border: 1px;
+    background-color: rgba(0,255,255,0.15);
+    border-radius: 16px;
+    padding: 0.01em 16px;
+    width: 30%;
+}
+
+.border2{
+    border: 2px;
+    background-color: rgba(0,255,255,0.25);
+    border-radius: 16px;
+    padding: 0.01em 16px;
+    width: 40%;
+}
+
+.top{
+    font-size: 45px;
+    font-family: Georgia, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+.head {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+}
+
+#out {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.class {
+    position: center;
+    text-align: center;
+    width: 25%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.classtitle {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+   width: auto;
+   height: auto;
+   margin: auto;
+   position: relative;
+ }
+
+.myform {
+    margin:0 auto;
+    padding:14px;
+    width: 75%;
+    height: 75%;
+}
+
+.column {
+    float: left;
+    width: 33%;
+}
+
+#stylized {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b7ddf2;
+    background: #ebf4fb;
+    text-align: center;
+}
+
+#stylized label{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#stylized input {
+    font-size: 15px;
+    padding: 4px;
+    border: solid 1px #aacfe4;
+    width: 75%;
+    display: inline-block;
+}
+
+.spacing {
+    line-height: 250%;
+}
+
+.textSize {
+    font-size: 20px;
+}
+
+input.Submit,.Clear {
+    padding: 20px;
+    background-color: maroon;
+    color: white;
+    border-radius: 8px;
+}
+
+.CS1371 {
+    font-family: Georgia, serif;
+    font-style: oblique;
+    background-color: rgba(255,68,34,0.15);
+}
+
+.AE {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    background-color: rgba(255,102,68,0.15);
+}
+
+.CHEM {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    background-color: rgba(255,153,51,0.15);
+}
+
+.CS {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(254,174,45,0.15);
+    font-style: normal;
+}
+
+.ECE {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: rgba(208,195,16,0.15);
+    font-style: bold;
+}
+
+.ECON {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: rgba(170,204,34,0.15);
+    font-style: italic;
+}
+
+.ENGL {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: rgba(105,208,37,0.15);
+    font-style: normal;
+}
+
+.MATH {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: rgba(34,204,170,0.15);
+    font-style: bold;
+}
+
+.PHYS {
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: rgba(18,189,185,0.15);
+    font-style: italic;
+}
+
+.PHIL {
+    font-family: "Courier New", Courier, monospace;
+    background-color: rgba(68,68,221,0.15);
+    font-style: normal;
+}
+
+.PSYC {
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color: rgba(59,12,189,0.15);
+    font-style: bold;
+}
+
+.NRE {
+    font-family: Helvetica, sans-serif;
+    background-color: rgba(68,34,153,0.15);
+    font-style: italic;
+}

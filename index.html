@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="WebsiteCSS.css">
+<script src="WebsiteScript.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="icon" type="image/png" href="icon.png"/>
+
+<head>
+<title class="topTitle"> Grade Calculator </title>
+</head>
+<center><div class="top border"><p>Grade Calculator</p></div></center>
+<center><div class="head border2"><p>Please select your class to get the weights:</p></div></center>
+<body>
+    <form action="#" method="post" class="class">
+        <b class="classtitle">What Class: </b>
+        <select id="subject" name="subject">
+            <option value="CS1371" class="CS1371">CS1371</option>
+            <option value="AE1350" class="AE">AE1350</option>
+            <option value="AE1601" class="AE">AE1601</option>
+            <option value="AE1770" class="AE">AE1770</option>
+            <option value="CHEM1211" class="CHEM">CHEM1211</option>
+            <option value="CHEM1212" class="CHEM">CHEM1212</option>
+            <option value="CHEM1315" class="CHEM">CHEM1315</option>
+            <option value="CHEM2311" class="CHEM">CHEM2311</option>
+            <option value="CS1331" class="CS">CS1331</option>
+            <option value="CS1332" class="CS">CS1332</option>
+            <option value="ECE1010" class="ECE">ECE1010</option>
+            <option value="ECE2020" class="ECE">ECE2020</option>
+            <option value="ECE2026" class="ECE">ECE2026</option>
+            <option value="ECON1101" class="ECON">ECON1101</option>
+            <option value="ECON2100" class="ECON">ECON2100</option>
+            <option value="ECON2101" class="ECON">ECON2101</option>
+            <option value="ENGL1101" class="ENGL">ENGL1101</option>
+            <option value="ENGL1102" class="ENGL">ENGL1102</option>
+            <option value="MATH1111" class="MATH">MATH1111</option>
+            <option value="MATH1113" class="MATH">MATH1113</option>
+            <option value="MATH1501" class="MATH">MATH1501</option>
+            <option value="MATH1502" class="MATH">MATH1502</option>
+            <option value="PHYS2211" class="PHYS">PHYS2211</option>
+            <option value="PHYS2212" class="PHYS">PHYS2212</option>
+            <option value="PHYS2213" class="PHYS">PHYS2213</option>
+            <option value="PHIL2010" class="PHIL">PHIL2010</option>
+            <option value="PHIL2025" class="PHIL">PHIL2025</option>
+            <option value="PSYC2005" class="PSYC">PSYC2005</option>
+            <option value="PSYC2020" class="PSYC">PSYC2020</option>
+            <option value="PSYC2103" class="PSYC">PSYC2103</option>
+            <option value="NRE2110" class="NRE">NRE2110</option>
+            <option value="NRE2698" class="NRE">NRE2698</option>
+        </select>
+        <button type="button" onclick="myFunction()">Get Weights</button>
+    </form>
+    <div id="stylized" class="myform">
+        <form id="form" name="form" method="post" action="WebsiteIndex.html">
+            <div class="column">
+                <label>Category: </label><br class="spacing">
+                <b class="textSize">Tests:</b><br class="spacing">
+                <b class="textSize">Homework:</b><br class="spacing">
+                <b class="textSize">Quiz:</b><br class="spacing">
+                <b class="textSize">Class Participation:</b><br class="spacing">
+                <b class="textSize">Extra Credit:</b><br class="spacing">
+                <b class="textSize">Final Exam:</b><br class="spacing">
+            </div>
+            <div class="column">
+                <label>Weight: </label><br class="spacing">
+                <input type="number" name="testWeight" id="testWeight" placeholder="0"/>%<br class="spacing">
+                <input type="number" name="homeworkWeight" id="homeworkWeight" placeholder="0"/>%<br class="spacing">
+                <input type="number" name="quizWeight" id="quizWeight" placeholder="0"/>%<br class="spacing">
+                <input type="number" name="cpWeight" id="cpWeight" placeholder="0"/>%<br class="spacing">
+                <b class="textSize">No Weight! </b><br class="spacing">
+                <input type="number" name="finalWeight" id="finalWeight" placeholder="0"/>%<br class="spacing">
+            </div>
+            <div class="column">
+                <label>Score: </label><br class="spacing">
+                <input type="text" name="testScore" id="testScore" placeholder="0"/><br class="spacing">
+                <input type="text" name="homeworkScore" id="homeworkScore" placeholder="0"/><br class="spacing">
+                <input type="text" name="quizScore" id="quizScore" placeholder="0"/><br class="spacing">
+                <input type="text" name="cpScore" id="cpScore" placeholder="0"/><br class="spacing">
+                <input type="text" name="ecScore" id="ecScore" placeholder="0"/><br class="spacing">
+                <b class="textSize">Input Desired Score Overall Score Below</b><br class="spacing">
+            </div>
+                <input type="number" name="finalScore" id="finalScore" placeholder="Input Desired Class Average"/><br class="spacing">
+                <input class="Submit" type="button" value="Submit" onclick="getGrade()">
+                <input class="Clear" type="reset" value="Clear">
+        </form>
+    </div>
+    <center><div id="out"></div></center>
+
+
+</html>
